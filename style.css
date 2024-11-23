@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom:1px solid rgb(200,200,200);
+
+}
+
+
+.menu a:hover{
+    color: #007bff;
+}
+
+.menu .btn-menu{
+    background-color: #3281b9;
+    display: inline-block;
+    padding:8px 12px;
+    color:white;
+    border-radius:8px;
+}
+
+.menu .btn-menu:hover{
+    background-color: #124265;
+    color: white;
+
+
+}
+
+.logo {
+    color: #16507b;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+section.main{
+    background-image: url('img/back-futebol.jpg');
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nova-secao {
+    background-image: url('img/colorful-sports.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+
+}
+
+.main__cta h2{
+    color: #16507b;
+    font-size: 80px;
+
+}
+
+.main__cta p{
+    color:white;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+
+.main__cta button{
+    background-color: #3281b9;
+    display: inline-block;
+    padding:8px 30px;
+    color:white;
+    border-radius:8px;
+    font-size: 12px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single{
+    border-radius:10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.diferencial-single i{
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+
+}
+
+.diferencial-single p{
+    color:gray;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+
+section-sobre{
+    padding: 80px 0;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+
+}
+
+.chamada-sobre h2{
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+
+}
+
+.conteudo-sobre span{
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+.conteudo-sobre i{
+    color: #007bff;
+}
+ 
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .conteudo-sobre p{width:100%; margin: 20px 20px; }
+}
+
+/* Login-CSS parte 02 */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.chat-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-log {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.chat-input, .chat-button {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #eee;
+    font-size: 16px;
+}
+
+.chat-input {
+    width: 80%;
+    border-radius: 0 0 0 8px;
+    outline: none;
+}
+
+.chat-button {
+    width: 20%;
+    background-color: #3281b9;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 0 8px 0;
+    transition: background-color 0.3s;
+}
+
+.chat-button:hover {
+    background-color: #124265;
+}
+
+/* Estilos para as mensagens */
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.bot-message {
+    text-align: left;
+}
+/* Estilos para o chat pop-up */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.open-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px 20px;
+    background-color: #3281b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}

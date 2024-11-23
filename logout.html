@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logout-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            color: #1478b8;
+        }
+        p {
+            margin: 15px 0;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            background-color: #1478b8;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: #0e5a8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-container">
+        <h2>Logout efetuado com sucesso</h2>
+        <p>Obrigado por usar nosso sistema!</p>
+        <a href="login.html">Voltar para a tela de login</a>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 5000);
+    </script>
+</body>
+</html>

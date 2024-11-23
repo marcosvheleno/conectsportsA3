@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Denúncias e/ou reserva locais</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f7ff;
+        color: #8e7f7f;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #1478b8;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #1478b8;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #1478b8;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0e5a8a;
+    }
+    .error-message {
+        color: red;
+        margin-bottom: 10px;
+    }
+    .back-button {
+        background-color: #1478b8;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .back-button:hover {
+        background-color: #0e5a8a;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relatos e/ou especificação locais</h1>
+        <h2>Espaço para especificação de local e horário de atividades esportivas e Feedbacks:</h2>
+        <form id="contact-form" action="#" method="post">
+            <div id="error-message" class="error-message" style="display: none;">Por favor, preencha todos os campos antes de enviar.</div>
+            
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Endereço de e-mail:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="telefone">Telefone de contato:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="local">Local da atividade esportiva:</label>
+            <input type="text" id="local" name="local" required>
+
+            <label for="horario">Horário desejado:</label>
+            <input type="text" id="horario" name="horario" required>
+
+            <label for="mensagem">Mensagem e/ou considerações:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="index.html" class="back-button">Voltar para a página inicial</a>
+    </div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const telefone = document.getElementById("telefone").value.trim();
+            const endereco = document.getElementById("endereco").value.trim();
+            const local = document.getElementById("local").value.trim();
+            const horario = document.getElementById("horario").value.trim();
+            const mensagem = document.getElementById("mensagem").value.trim();
+
+            
+            if (!nome || !email || !telefone || !endereco || !local || !horario || !mensagem) {
+                document.getElementById("error-message").style.display = "block";
+                return;
+            }
+
+            document.getElementById("error-message").style.display = "none";
+            alert("Mensagem enviada com sucesso!");
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+</body>
+</html>

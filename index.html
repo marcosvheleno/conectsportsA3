@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <header>
+        <div class="center">
+            <div class="logo>">
+                <h2>ConectSports</h2>
+            </div><!--logomarca do projeto-->
+            <div class="menu">
+            <a class="btn-menu" href="transportep.html">
+                Transporte Público
+            </a>
+            <a class="btn-menu" href="iframe.html">Localização de Espaços
+            </a>
+            <a class="btn-menu" href="relatos.html">
+                Cadastro de atividades e feedbacks
+            </a>
+            <a class="btn-menu" href="sobre.html">
+                Sobre
+            </a>
+            <a class="btn-menu" href="contato.html">
+                Contato
+            </a>
+            <a class="btn-menu" href="login.html">
+                Login
+            </a>
+            <a class="btn-menu" href="logout.html">
+                Logout
+            </a>
+             </div><!--Menu-->
+             <div class="menu-mobile".
+                <i class="fas fa-anchor"></i></div>
+        </div><!--center-->
+    </header>
+
+
+    <section class="main">
+        <div class="center">
+            <div class="main__cta">
+                <h2>Conect Sports</h2>
+                <p>Uma plataforma completa para a população e prefeitura que desejam se manter atualizados e conectados em relação à prática esportiva</p>
+                
+            </div><!--main-cta-->
+
+            <div class="diferenciais">
+                <div class="diferencial-single">
+                    <i class="fas fa-anchor"></i>
+                    <h2>Dica nº 1</h2>
+                    <p>Adote hábitos saudáveis: alimente-se de maneira saudável e não fume</p>
+
+                </div><!--diferencial-single-->
+                <div class="diferencial-single">
+                    <i class="fas fa-anchor"></i>
+                    <h2>Dica nº 2</h2>
+                    <p>Evite café e bebidas alcoólicas em excesso; não dirija após ingerir bebida alcoólica e procure dormir 8 horas por dia;</p>
+
+                </div><!--diferencial-single-->
+                <div class="diferencial-single">
+                    <i class="fas fa-anchor"></i>
+                    <h2>Dica nº 3</h2>
+                    <p>Faça atividades esportivas e de lazer regularmente;Trabalho: programe e tire férias anuais; não leve serviço para casa; mantenha o ambiente de trabalho limpo, iluminado, ventilado, sem cigarros, poluição ou barulho excessivo; em momentos de tensão faça um relaxamento com respiração lenta e pausada.</p>
+
+                </div><!--diferencial-single-->
+                <div class="diferencial-single">
+                    <i class="fas fa-anchor"></i>
+                    <h2>Dica nº 4</h2>
+                    <p>Esporte e lazer: faça 30 minutos diários de atividade física, de forma contínua; suba e desça escadas em vez de usar elevador; nos momentos livres faça caminhada, pratique esportes, dance; escute música;</p>
+
+                </div><!--diferencial-single-->
+
+            </div><!--diferenciais-->
+        </div><!--center-->
+    </section><!--main-->
+
+
+    <section class="sobre"
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Principais Objetivos</h2>
+                <p>O aplicativo CONECT SPORTS é uma plataforma completa para a população e prefeitura que desejam se manter atualizados e conectados em relação à prática esportiva. Ele oferece informações sobre eventos esportivos, programas de treinamento, dicas de saúde e nutrição, além de permitir que os usuários se conectem com outros entusiastas de esportes e prefeitura.
+            </div><!--Chamada-sobre--->
+            <div class="conteudo-sobre">
+                <p>Manutenção e Gestão de Espaços Esportivos: Gestão transparente sobre todas as normas esportivas, como o início de obras e manutenções relacionadas a locais esportivos, iluminação e saneamento básico presente ao redor destes mesmos locais.</p>
+                <p>Organização de Eventos Esportivos: O gerenciamento poderá ser feito pela prefeitura e seus agentes. Diversos eventos poderão ser organizados como campeonatos, torneios, jogos estudantis e festivais esportivos. Esses eventos visam incentivar a competição saudável e revelar talentos esportivos locais.</p>
+                <p>Esporte e Inclusão Social: Oportunidades poderão ser organizadas para pessoas com deficiência, grupos vulneráveis e comunidades em situação de vulnerabilidade. A prefeitura poderá desenvolver programas esportivos inclusivos, adaptados e acessíveis, visando a integração e a melhoria da qualidade de vida dessas pessoas.</p>
+                <p>Espaço de comunicação: O sistema terá um espaço de comunicação visando a comunicação entre a população e os órgãos públicos, com chat para atendimento e espaços para divulgar opiniões e feedbacks para melhoria do esporte local. </p>
+            </div>
+        </div><!--center-->
+
+    </section><!--sobre-->
+    
+    <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot ConectSports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-popup" id="chat-popup">
+        <div class="chat-container">
+            <button class="chat-close" id="chat-close">&times;</button>
+            <div class="chat-box">
+                <div id="chat-log" class="chat-log"></div>
+                <input type="text" id="user-input" class="chat-input" placeholder="Digite sua mensagem...">
+                <button id="send-button" class="chat-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <button class="open-chat-button" id="open-chat-button">Abrir Chat</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
